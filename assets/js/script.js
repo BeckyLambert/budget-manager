@@ -1,5 +1,5 @@
 //pull initial budgetItems/lastID from localStorage to set initial variables
-const budgetItems = JSON.parse(localStorage.getItem('budgetItem')) || [];
+let budgetItems = JSON.parse(localStorage.getItem('budgetItem')) || [];
 let lastID = parseInt(localStorage.getItem('lastID')) || 0; 
 
 //function to update localStorage with latest budgetItems and latest lastID
